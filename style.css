@@ -1,0 +1,236 @@
+/* font-family: 'DM Serif Text', serif;
+font-family: 'Lobster', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'DM Serif Display', serif; */
+
+/* Colors:
+    #94dc94
+*/
+
+
+
+body {
+    background-color: #8fbc8fa7;
+}
+
+/* NavBar LOGO */
+.mynavbar {
+    background-color: #00000000;
+    min-width: 100%;
+}
+
+.mylogotext {
+    font-size: 50px;
+    color: white !important;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
+}
+
+.mylogotext:hover {
+    color: white;
+}
+
+.mylogotext:active {
+    color: white;
+}
+
+/* Menu Bar */
+.offcanvasbg {
+    background-color: #FFD700;
+}
+
+.mylogotextmenu {
+    font-size: 50px;
+    color: #56a556;
+    font-family: 'Lobster', sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.542);
+}
+
+/* Carousel MAIN*/
+.mycr {
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.281);
+}
+
+.c-item {
+    height: 100vh;
+}
+
+.c-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #417e41a7;
+    /* Dark overlay color with 50% opacity */
+}
+
+.content-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+}
+
+.coh1 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 650;
+    font-size: 56px;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
+}
+
+.cop {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.915);
+}
+
+.btn {
+    font-family: 'DM Serif', serif;
+    background-color: #FFD700;
+    color: black;
+    border: 2px solid #8fbc8fa7;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.494);
+}
+
+
+/* Cards */
+.mycardcontainer {
+    background-color: #94dc946b !important;
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.068), 0px 5px 8px rgba(0, 0, 0, 0.068);
+}
+
+.mycardbox {
+    margin: 20px 10px;
+    padding: 20px;
+}
+
+.bgmycard {
+    background-color: #87CEEB;
+}
+
+.card_image {
+    min-height: 164px;
+    max-height: 164px;
+    object-fit: cover;
+}
+
+
+
+/* Footer */
+.myfooter {
+    box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.208);
+    background-color: #6c9c6e;
+}
+
+i {
+    font-size: 25px;
+    width: 46px;
+}
+
+.mysection {
+    margin-bottom: -20px;
+}
+
+.myicons {
+    text-decoration: none;
+    color: white;
+}
+
+.myicons:hover {
+    color: rgba(255, 255, 255, 0.485);
+}
+
+.mycopyright {
+    color: white;
+    padding-top: 10px;
+}
+
+
+
+/* Small */
+@media (min-width: 576px) {
+    .bgmycard {
+        background-color: #87CEEB;
+        min-width: 320px;
+        height: 408px;
+    }
+
+    .card_image {
+        min-height: 164px;
+        max-height: 172px;
+        object-fit: cover;
+    }
+}
+
+/* Medium */
+@media (min-width: 768px) {
+    .bgmycard {
+        background-color: #87CEEB;
+        min-width: 560px;
+        height: 400px;
+    }
+
+    .card_image1 {
+        object-position: 0px -172px;
+    }
+
+    .card_image {
+        min-height: 164px;
+        max-height: 480px;
+        object-fit: cover;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .bgmycard {
+        background-color: #87CEEB;
+        min-width: 800px;
+        height: 520px;
+    }
+
+    .card_image1 {
+        object-position: 0px -172px;
+    }
+
+    .card_image {
+        min-height: 164px;
+        max-height: 480px;
+        object-fit: cover;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .bgmycard {
+        background-color: #87CEEB;
+        min-width: 920px;
+        height: 580px;
+    }
+
+    .card_image1 {
+        object-position: 0px -172px;
+    }
+
+    .card_image {
+        min-height: 164px;
+        max-height: 480px;
+        object-fit: cover;
+    }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
