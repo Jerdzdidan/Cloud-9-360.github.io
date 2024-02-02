@@ -126,6 +126,7 @@ body {
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.915);
 }
 .btn {
+    font-size: small;
     font-family: 'DM Serif', serif;
     background-color: #FFD700;
     color: black;
@@ -168,10 +169,6 @@ i {
     width: 46px;
 }
 
-.mysection {
-    margin-bottom: -20px;
-}
-
 .myicons {
     text-decoration: none;
     color: white;
@@ -205,6 +202,9 @@ i {
         font-size: 46px;
         text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
     }
+    .btn {
+        font-size: medium;
+    }
 
 
     /* Cards */
@@ -231,6 +231,9 @@ i {
         font-weight: 650;
         font-size: 56px;
         text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
+    }
+    .btn {
+        font-size: larger;
     }
 
     /* Cards */
