@@ -46,11 +46,9 @@ body {
 .mylogo{
     width: 62px;
 }
-.mylogotext{
-    font-size: 32px;
-}
 
 .mylogotext {
+    font-size: 32px;
     color: white !important;
     font-family: 'Lobster', sans-serif;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
@@ -64,7 +62,7 @@ body {
     color: white;
 }
 
-/* Menu Bar */
+/* Dropdown Menu Bar */
 .offcanvasbg {
     background-color: #FFD700;
 }
@@ -79,6 +77,8 @@ body {
 .dropdown-menu {
     background-color: rgba(255, 255, 255, 0.542);
 }
+
+
 
 /* Carousel MAIN*/
 .mycr {
@@ -114,18 +114,17 @@ body {
     text-align: center;
 }
 
+/* Main Text */
 .coh1 {
     font-family: 'DM Serif Display', serif;
     font-weight: 650;
-    font-size: 56px;
+    font-size: 42px;
     text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
 }
-
 .cop {
     font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.915);
 }
-
 .btn {
     font-family: 'DM Serif', serif;
     background-color: #FFD700;
@@ -189,12 +188,26 @@ i {
 
 /* Small */
 @media (min-width: 576px) {
+    /* Logo */
     .mylogo{
         width: 96px;
     }
     .mylogotext{
         font-size: 50px;
     }
+
+
+    /* Carousel Main */
+    /* Main Text */
+    .coh1 {
+        font-family: 'DM Serif Display', serif;
+        font-weight: 650;
+        font-size: 46px;
+        text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
+    }
+
+
+    /* Cards */
     .bgmycard {
         background-color: #87CEEB;
         min-width: 320px;
@@ -210,16 +223,25 @@ i {
 
 /* Medium */
 @media (min-width: 768px) {
+
+    /* Carousel Main */
+    /* Main Text */
+    .coh1 {
+        font-family: 'DM Serif Display', serif;
+        font-weight: 650;
+        font-size: 56px;
+        text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
+    }
+
+    /* Cards */
     .bgmycard {
         background-color: #87CEEB;
         min-width: 560px;
         height: 400px;
     }
-
     .card_image1 {
         object-position: 0px -172px;
     }
-
     .card_image {
         min-height: 164px;
         max-height: 480px;
@@ -229,6 +251,8 @@ i {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+    /* Cards */
     .bgmycard {
         background-color: #87CEEB;
         min-width: 800px;
@@ -248,6 +272,8 @@ i {
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+    /* Cards */
     .bgmycard {
         background-color: #87CEEB;
         min-width: 920px;
