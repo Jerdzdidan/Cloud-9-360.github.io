@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-form</title>
+
+    <style>
+        .text-box{
+            width: 150px;
+            border-color: rgb(0, 0, 0);
+            border-width: 3px;
+            box-shadow: 1px 1px #88888860;
+            border-radius: 3px;
+            background-color: rgba(128, 128, 128, 0.322);
+        }
+
+        .text {
+            background-color: rgb(103, 196, 240);
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 10px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+        }
+        .text:hover {
+            background-color: rgba(103, 197, 240, 0.692); 
+        }
+        .text:active {
+            background-color: rgb(103, 197, 240); 
+        }
+        table{
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            padding: 14px;
+            margin: auto;
+        }
+        .choices{
+            border-style: solid;
+            padding: 10px;
+            width: fit-content;
+            margin: auto;
+        }
+
+    </style>
+
+</head>
+<body style="background-color: rgb(183, 231, 86);">
+    <nav style="display: flex;">
+        <div class="logo" style="display: flex;">
+            <a href="index.html" style="text-decoration: none;">
+                <div class="text">
+                    <h1 style = "text-align: center; color: rgb(54, 54, 54);">MAIN MENU</h1>
+                </div>
+            </a>
+            <div style="margin-left: 542px;">
+                <h1 align="center">SIGN-UP FORM</h1>
+            </div>
+        </div>
+        <div style="display: flex; margin-left: auto;">
+            <a href="sample1.html" style="text-decoration: none;">
+                <div class="text" style="margin-right: 10px;">
+                <h4 style="color: rgb(54, 54, 54);">SAMPLE 1</h4>
+                </div>
+            </a>
+            <a href="mygallerypage.html" style="text-decoration: none;">
+                <div class="text" style="margin-right: 10px;">
+                <h4 style="color: rgb(54, 54, 54);">My Gallery</h4>
+                </div>
+            </a>
+            <a href="signupform.html" style="text-decoration: none; margin-right: 10px;">
+                <div class="text">
+                <h4 style="color: rgb(54, 54, 54);">Signup Form</h4>
+                </div>
+            </a>
+            <a href="output.html" style="text-decoration: none;">
+                <div class="text">
+                <h4 style="color: rgb(54, 54, 54);">Output Form</h4>
+                </div>
+            </a>
+        </div>
+    </nav>
+    <hr width="100%">
+
+    <div style="text-align: center; margin-bottom: 4px;"><h3>Please Fill-up</h3></div>
+
+    <form name="signupform">
+        <table border = 0>
+            <tr>
+                <td>User Name:
+                <input class="text-box" type="text" name="fname" value="" required="yes" style="margin-left: 6px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password:
+                <input class="text-box" type="password" name="fname" value="" required="yes" style="margin-left: 17px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>First Name:
+                <input class="text-box" type="text" name="fname" value="" required="yes" style="margin-left: 7px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Last Name:
+                <input class="text-box" type="text" name="lname" value="" required="yes" style="margin-left: 9px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Address:
+                <input class="text-box" type="text" name="address" value="" required="yes" size="30" style="margin-left: 27px;">
+                </td>
+            </tr>
+
+        </table>
+
+            <br>
+            
+            <div class="choices">
+                Gender:
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender2">Female
+                <br><br>
+                Select Your Province:
+                <select name="province" id="" style="background-color: rgba(170, 170, 170, 0.541);">
+                    <option value="">Aurora</option>
+                    <option value="">Batangas</option>
+                    <option value="">Cebu</option>
+                    <option value="">Davao Del Sur</option>
+                    <option value="">Ilocos Norte</option>
+                    <option value="">Laguna</option>
+                    <option value="">Nueva Ecija</option>
+                    <option value="">Rizal</option>
+                    <option value="">Samar</option>
+                    <option value="">Tarlac</option>
+                    <option value="">Zambales</option>
+                </select>
+                <br><br>
+                COMMENTS/SUGGESTIONS: <br>
+                <textarea name="10" cols="50" style="background-color: rgba(170, 170, 170, 0.541);">
+Please enter your comments here...
+                </textarea>
+                <br><br>
+                <input type="submit" value="Submit Form">
+                <input type="Reset" value="Clear Form">
+            </div>
+
+    </form>
+    
+</body>
+</html>

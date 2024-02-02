@@ -8,6 +8,29 @@ font-family: 'DM Serif Display', serif; */
     #94dc94
 */
 
+/* Transition effect when loading into the page */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.fade-in {
+    animation: fadeIn 0.8s ease-in forwards;
+}
+.fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+}
 
 
 body {
@@ -20,8 +43,14 @@ body {
     min-width: 100%;
 }
 
+.mylogo{
+    width: 62px;
+}
+.mylogotext{
+    font-size: 32px;
+}
+
 .mylogotext {
-    font-size: 50px;
     color: white !important;
     font-family: 'Lobster', sans-serif;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
@@ -158,10 +187,14 @@ i {
     padding-top: 10px;
 }
 
-
-
 /* Small */
 @media (min-width: 576px) {
+    .mylogo{
+        width: 96px;
+    }
+    .mylogotext{
+        font-size: 50px;
+    }
     .bgmycard {
         background-color: #87CEEB;
         min-width: 320px;
