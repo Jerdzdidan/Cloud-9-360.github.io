@@ -33,7 +33,7 @@ font-family: 'DM Serif Display', serif; */
     animation: fadeOut 0.5s ease-out forwards;
 }
 
-
+/* Background Color */
 body {
     background-color: #8fbc8fa7;
 }
@@ -63,19 +63,38 @@ body {
     color: white;
 }
 
+
 /* Dropdown Menu Bar */
 .offcanvasbg {
-    background-color: #FFD700;
+    background-color: #8fbc8f;
 }
 .mylogotextmenu {
     font-size: 50px;
-    color: #56a556;
+    color: white;
     font-family: 'Lobster', sans-serif;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.452);
 }
 .dropdown-menu {
     background-color: rgba(255, 255, 255, 0.542);
 }
+.dropdown-item{
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+
+.mynav-item {
+    position: relative;
+    text-decoration: none; 
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-link:active{
+    color: #87CEEB;
+    transition: 0s;
+}
+
+
+
 
 
 
@@ -99,8 +118,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #417e41a7;
-    /* Dark overlay color with 50% opacity */
+    background-color: #417e414c;
 }
 
 .content-overlay {
@@ -114,13 +132,14 @@ body {
 }
 
 /* Main Text */
-.coh1 {
+.content-overlay h1 {
     font-family: 'DM Serif Display', serif;
     font-weight: 650;
-    font-size: 42px;
+    font-size: 32px;
     text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
 }
-.cop {
+.content-overlay p {
+    font-size: 12px;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.915);
 }
@@ -128,14 +147,13 @@ body {
     font-size: small;
     font-weight: 500;
     font-family: 'Montserrat', serif;
-    background-color: #FFD700;
+    background-color: #f4dd5b;
     color: black;
     border: 2px solid #8fbc8fa7;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.494);
 }
 
-
-/* Cards */
+/* Carousel2 */
 .mycardcontainer {
     background-color: #94dc946b !important;
     box-shadow: 0px -5px 8px rgba(0, 0, 0, 0.068), 0px 5px 8px rgba(0, 0, 0, 0.068);
@@ -163,6 +181,250 @@ body {
 .card-text{
     font-family: 'Open Sans', sans-serif;
     font-size: medium;
+}
+
+
+/* Message 1 */
+.message1 h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.message1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Cards */
+.cardcontainer{
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.296);
+}
+.mycards {
+    display: flex; 
+}
+
+.card_images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_image1, .card_image2 {
+    height: 350px; 
+    padding: 0; 
+    position: relative; 
+}
+
+.cardoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fb8600a6; 
+    transition: 0.5s ease; 
+}
+.cardoverlay h1 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 145px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    font-size: 26px;
+}
+.cardoverlay hr{
+    position: absolute;
+    width: 190px;
+    margin: 0;
+    border: 0;
+    border-top: 3px solid white; 
+    z-index: 1;
+    top: 186px;
+    left: 30px;
+    opacity: 1; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+}
+.cardoverlay p{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 200px;
+    color: white;
+    z-index: 1; 
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+    font-size: small;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+}
+.cardoverlay:hover, .cardoverlay:active{
+    background-color: #fb860000;
+}
+
+.cardoverlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffb803b2; 
+    transition: 0.5s ease; 
+}
+.cardoverlay2 h1 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 145px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    font-size: 26px;
+}
+.cardoverlay2 hr{
+    position: absolute;
+    width: 190px;
+    margin: 0;
+    border: 0;
+    border-top: 3px solid white; 
+    z-index: 1;
+    top: 186px;
+    left: 30px;
+    opacity: 1; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+}
+.cardoverlay2 p{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 200px;
+    color: white;
+    z-index: 1; 
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+    font-size: small;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+}
+.cardoverlay2:hover, .cardoverlay2:active{
+    background-color: #fb860000;
+}
+
+.cardoverlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #219dbc98; 
+    transition: 0.5s ease; 
+}
+.cardoverlay3 h1 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 145px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    font-size: 26px;
+}
+.cardoverlay3 hr{
+    position: absolute;
+    width: 190px;
+    margin: 0;
+    border: 0;
+    border-top: 3px solid white; 
+    z-index: 1;
+    top: 186px;
+    left: 30px;
+    opacity: 1; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+}
+.cardoverlay3 p{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 200px;
+    color: white;
+    z-index: 1; 
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+    font-size: small;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+}
+.cardoverlay3:hover, .cardoverlay3:active{
+    background-color: #fb860000;
+}
+
+.cardoverlay4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #80c4e4ca; 
+    transition: 0.5s ease; 
+}
+.cardoverlay4 h1 {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 145px;
+    color: white;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    font-size: 26px;
+}
+.cardoverlay4 hr{
+    position: absolute;
+    width: 190px;
+    margin: 0;
+    border: 0;
+    border-top: 3px solid white; 
+    z-index: 1;
+    top: 186px;
+    left: 30px;
+    opacity: 1; 
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+}
+.cardoverlay4 p{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 200px;
+    color: white;
+    z-index: 1; 
+    font-family: 'Open Sans', 'sans-serif';
+    font-weight: 700;
+    font-size: small;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+}
+.cardoverlay4:hover, .cardoverlay4:active{
+    background-color: #fb860000;
+}
+
+
+@media (max-width: 767.98px) { 
+    .mycards {
+        flex-direction: column; 
+        height: auto; 
+    }
+}
+
+
+
+
+
+
+
+/* Message 2 */
+.message2 h2{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.message2 p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -202,32 +464,125 @@ i {
         font-size: 50px;
     }
 
-
-    /* Carousel Main */
     /* Main Text */
-    .coh1 {
+    .content-overlay h1 {
         font-family: 'DM Serif Display', serif;
         font-weight: 650;
         font-size: 46px;
         text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
     }
+    .content-overlay p {
+        font-size: 18px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.915);
+    }
     .btn {
         font-size: medium;
     }
 
-
-    /* Cards */
     .bgmycard {
         background-color: #87CEEB;
-        min-width: 320px;
-        height: 408px;
+        min-width: 560px;
+        height: 400px;
     }
-
     .card_image {
         min-height: 164px;
-        max-height: 172px;
+        max-height: 480px;
         object-fit: cover;
     }
+
+    /* Cards */
+    .cardcontainer{
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.296);
+    }
+    .mycards {
+        display: flex; 
+        height: 350px; 
+    }
+    
+    .card_images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card_image1, .card_image2 {
+        height: 100%; 
+        padding: 0; 
+        position: relative; 
+    }
+    
+    .cardoverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fb8600a6; 
+        transition: 0.5s ease; 
+    }
+    .cardoverlay h1, .cardoverlay2 h1, .cardoverlay3 h1, .cardoverlay4 h1 {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 135px;
+        color: white;
+        z-index: 1;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+        font-size: 24px;
+    }
+    .cardoverlay hr, .cardoverlay2 hr, .cardoverlay3 hr, .cardoverlay4 hr {
+        position: absolute;
+        width: 210px;
+        margin: 0;
+        border: 0;
+        border-top: 3px solid white; 
+        z-index: 1;
+        top: 176px;
+        left: 20px;
+        opacity: 1; 
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+    }
+    .cardoverlay p, .cardoverlay2 p, .cardoverlay3 p, .cardoverlay4 p {
+        position: absolute;
+        margin-left: 20px;
+        margin-top: 185px;
+        color: white;
+        z-index: 1; 
+        font-family: 'Open Sans', 'sans-serif';
+        font-weight: 700;
+        font-size: x-small;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    }
+    .cardoverlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffb803b2; 
+        transition: 0.5s ease; 
+    }
+    .cardoverlay3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #219dbc98; 
+        transition: 0.5s ease; 
+    }
+    .cardoverlay4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #80c4e4ca; 
+        transition: 0.5s ease; 
+    }
+
 }
 
 /* Medium */
@@ -235,65 +590,267 @@ i {
 
     /* Carousel Main */
     /* Main Text */
-    .coh1 {
+    .content-overlay h1 {
         font-family: 'DM Serif Display', serif;
         font-weight: 650;
         font-size: 56px;
         text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.444);
     }
+    .content-overlay p {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.915);
+    }
     .btn {
         font-size: larger;
     }
 
-    /* Cards */
+    /* Attraction Cards */
     .bgmycard {
         background-color: #87CEEB;
         min-width: 560px;
         height: 400px;
-    }
-    .card_image1 {
-        object-position: 0px -172px;
     }
     .card_image {
         min-height: 164px;
         max-height: 480px;
         object-fit: cover;
     }
+
+    .cardcontainer{
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.296);
+    }
+    .mycards {
+        display: flex; 
+        height: 410px; 
+    }
+    
+    .card_images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card_image1, .card_image2 {
+        height: 100%; 
+        padding: 0; 
+        position: relative; 
+    }
+    
+    .cardoverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fb8600a6; 
+        transition: 0.5s ease; 
+    }
+    .cardoverlay h1, .cardoverlay2 h1, .cardoverlay3 h1, .cardoverlay4 h1 {
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 155px;
+        color: white;
+        z-index: 1;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+        font-size: 28px;
+    }
+    .cardoverlay hr, .cardoverlay2 hr, .cardoverlay3 hr, .cardoverlay4 hr {
+        position: absolute;
+        width: 210px;
+        margin: 0;
+        border: 0;
+        border-top: 3px solid white; 
+        z-index: 1;
+        top: 206px;
+        left: 60px;
+        opacity: 1; 
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+    }
+    .cardoverlay p, .cardoverlay2 p, .cardoverlay3 p, .cardoverlay4 p {
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 220px;
+        color: white;
+        z-index: 1; 
+        font-family: 'Open Sans', 'sans-serif';
+        font-weight: 700;
+        font-size: small;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    }
+    .cardoverlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffb803b2; 
+        transition: 0.5s ease; 
+    }
+    .cardoverlay3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #219dbc98; 
+        transition: 0.5s ease; 
+    }
+    .cardoverlay4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #80c4e4ca; 
+        transition: 0.5s ease; 
+    }
+
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-    /* Cards */
+    /* Dropdown Menu */
+    .mynav-item::before {
+        content: ''; 
+        position: absolute;
+        bottom: 0; 
+        left: 0; 
+        width: 0;
+        height: 2px;
+        background-color: #000; 
+        transition: width 0.5s ease; 
+    }
+    .mynav-item:hover::before {
+        width: 100%; 
+    }
+    .mynav-item:active::before {
+        background-color: #87CEEB; 
+    }
+    .mynav-item:hover::before {
+        width: 100%; 
+    }
+
+
+    /* Attraction Cards */
     .bgmycard {
         background-color: #87CEEB;
         min-width: 800px;
         height: 520px;
     }
 
-    .card_image1 {
-        object-position: 0px -172px;
-    }
-
     .card_image {
         min-height: 164px;
         max-height: 480px;
         object-fit: cover;
     }
+
+    /* Cards */
+    .cardcontainer{
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.296);
+    }
+    .mycards {
+        display: flex; 
+        height: 450px; 
+    }
+    
+    .card_images {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .card_image1, .card_image2 {
+        height: 100%; 
+        padding: 0; 
+        position: relative; 
+    }
+    
+    .cardoverlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fb8600a6; 
+        transition: 0.5s ease; 
+    }
+    .cardoverlay h1, .cardoverlay2 h1, .cardoverlay3 h1, .cardoverlay4 h1 {
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 165px;
+        color: white;
+        z-index: 1;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    }
+    .cardoverlay hr, .cardoverlay2 hr, .cardoverlay3 hr, .cardoverlay4 hr {
+        position: absolute;
+        width: 300px;
+        margin: 0;
+        border: 0;
+        border-top: 3px solid white; 
+        z-index: 1;
+        top: 226px;
+        left: 60px;
+        opacity: 1; 
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.319);
+    }
+    .cardoverlay p, .cardoverlay2 p, .cardoverlay3 p, .cardoverlay4 p {
+        position: absolute;
+        margin-left: 60px;
+        margin-top: 240px;
+        color: white;
+        z-index: 1; 
+        font-family: 'Open Sans', 'sans-serif';
+        font-weight: 700;
+        font-size: medium;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.335);
+    }
+    .cardoverlay2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #ffb803b2; 
+        transition: 0.5s ease; 
+    }
+    .cardoverlay3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #219dbc98; 
+        transition: 0.5s ease; 
+    }
+    .cardoverlay4 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #80c4e4ca; 
+        transition: 0.5s ease; 
+    }
+
+
+
 }
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-    /* Cards */
+    /* Attraction Cards */
     .bgmycard {
         background-color: #87CEEB;
         min-width: 920px;
         height: 580px;
-    }
-
-    .card_image1 {
-        object-position: 0px -172px;
     }
 
     .card_image {
