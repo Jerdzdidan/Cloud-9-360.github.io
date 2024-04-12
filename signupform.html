@@ -1,156 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup-form</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <style>
-        .text-box{
-            width: 150px;
-            border-color: rgb(0, 0, 0);
-            border-width: 3px;
-            box-shadow: 1px 1px #88888860;
-            border-radius: 3px;
-            background-color: rgba(128, 128, 128, 0.322);
-        }
+  <title>Cloud-9</title>
 
-        .text {
-            background-color: rgb(103, 196, 240);
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 10px;
-            padding-top: 1px;
-            padding-bottom: 1px;
-        }
-        .text:hover {
-            background-color: rgba(103, 197, 240, 0.692); 
-        }
-        .text:active {
-            background-color: rgb(103, 197, 240); 
-        }
-        table{
-            border-style: solid;
-            border-width: 2px;
-            border-color: black;
-            padding: 14px;
-            margin: auto;
-        }
-        .choices{
-            border-style: solid;
-            padding: 10px;
-            width: fit-content;
-            margin: auto;
-        }
+  <link rel="icon" type="svg" href="images/Logo.svg">
 
-    </style>
+  <!-- Bootstrap5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=DM+Serif+Text&family=Lobster&family=Montserrat:wght@300;500;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+
+  /* Target input fields */
+  #form-container input[type="text"],
+  #form-container input[type="email"],
+  #form-container textarea {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 5px;
+      width: 100%;
+      box-sizing: border-box; /* Ensures padding and border are included in width */
+  }
+
+  /* Target buttons */
+  #form-container input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+
+  /* Media query for viewports 768px and lower */
+  @media (max-width: 425px) {
+      /* Adjust the iframe width to 100% */
+      #form-container {
+            width: 100%; /* Make the iframe width 100% */
+            height: 1960px; /* Adjust the height to suit your form length */
+            overflow: auto; /* Allow for scrolling if needed */
+      }
+  }
+  @media (min-width: 425px) and (max-width: 768px) {
+      /* Adjust the iframe width to 100% */
+      #form-container {
+            width: 100%; /* Make the iframe width 100% */
+            height: 1640px; /* Adjust the height to suit your form length */
+            overflow: auto; /* Allow for scrolling if needed */
+      }
+  }
+</style>
+
 
 </head>
-<body style="background-color: rgb(183, 231, 86);">
-    <nav style="display: flex;">
-        <div class="logo" style="display: flex;">
-            <a href="index.html" style="text-decoration: none;">
-                <div class="text">
-                    <h1 style = "text-align: center; color: rgb(54, 54, 54);">MAIN MENU</h1>
-                </div>
+
+<body>
+  <div class="mybody mycontainer fade-in">
+
+    <!-- Navbar -->
+    <nav id="mynavbar" class="navbar mynavbar fixed-top">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col">
+            <a class="navbar-brand mylogotext" href="index.html">
+              <img src="images/Logo.svg" alt="Logo" class="d-inline-block mb-4 mylogo"> Cloud 9
             </a>
-            <div style="margin-left: 542px;">
-                <h1 align="center">SIGN-UP FORM</h1>
-            </div>
+          </div>
         </div>
-        <div style="display: flex; margin-left: auto;">
-            <a href="sample1.html" style="text-decoration: none;">
-                <div class="text" style="margin-right: 10px;">
-                <h4 style="color: rgb(54, 54, 54);">SAMPLE 1</h4>
-                </div>
-            </a>
-            <a href="mygallerypage.html" style="text-decoration: none;">
-                <div class="text" style="margin-right: 10px;">
-                <h4 style="color: rgb(54, 54, 54);">My Gallery</h4>
-                </div>
-            </a>
-            <a href="signupform.html" style="text-decoration: none; margin-right: 10px;">
-                <div class="text">
-                <h4 style="color: rgb(54, 54, 54);">Signup Form</h4>
-                </div>
-            </a>
-            <a href="output.html" style="text-decoration: none;">
-                <div class="text">
-                <h4 style="color: rgb(54, 54, 54);">Output Form</h4>
-                </div>
-            </a>
+
+        <button class="navbar-toggler bg-light me-1 mb-4" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end offcanvasbg myoffcanvas" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title mylogotextmenu" id="offcanvasNavbarLabel">Cloud 9 360°</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <hr
+            style="width: 95%;text-align:center;margin-left:auto; margin-right: auto; border-width: 4px; border-radius: 5px; margin-top: -10px; margin-bottom: -10px; display: block;">
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item mynav-item">
+                <a class="nav-link" aria-current="page" href="index.html"><b>Home</b></a>
+              </li>
+              <li class="nav-item mynav-item">
+                <a class="nav-link" href="about_us.html">About Us</a>
+              </li>
+              <li class="nav-item mynav-item">
+                <a class="nav-link" href="signupform.html">Restaurant</a>
+              </li>
+              <li class="nav-item mynav-item">
+                <a class="nav-link" href="HangingBridge.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mynav-item" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Visit US
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="attractions.html"><b>Attractions</b></a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="attractions.html#cloud-9_building">Cloud-9 Building</a></li>
+                  <li><a class="dropdown-item" href="attractions.html#museum">The Museum</a></li>
+                  <li><a class="dropdown-item" href="attractions.html#hangingbridge">The Hanging bridge</a></li>
+                  <li><a class="dropdown-item" href="attractions.html#metalwalkway">The Metal walkway</a></li>
+                  <li><a class="dropdown-item" href="attractions.html#dizzyhouse">The Dizzy House</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
         </div>
+
+      </div>
     </nav>
-    <hr width="100%">
 
-    <div style="text-align: center; margin-bottom: 4px;"><h3>Please Fill-up</h3></div>
+    <!-- Carousel -->
+    <div id="carouselExampleAutoplaying" class="hero-carousel carousel slide mycr carousel-fade" data-bs-ride="carousel"
+      data-bs-interval="3400" data-bs-touch="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="images/cards/Cloud-9-Lumpia-Sinigang-Bangus.webp" class="d-block w-100 c-image" alt="...">
+          <div class="overlay"></div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/carousel/Cloud-9-Restaurant-Antipolo.webp" class="d-block w-100 c-image" alt="...">
+          <div class="overlay"></div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/carousel/CLOUD-9-21.png" class="d-block w-100 c-image" alt="...">
+          <div class="overlay"></div>
+        </div>
+      </div>
+      <div class="content-overlay">
+        <h1>Restaurant</h1>
+        <p>"Restaurant is open in 8:00am - 10:00pm"</p>
+        <a class="btn btn-outline-light btn-lg mt-1 px-4 py-3 mb-md-0" href="#sectionID" role="button"><b>Continue</b></a>
+      </div>
+    </div>
 
-    <form name="signupform">
-        <table border = 0>
-            <tr>
-                <td>User Name:
-                <input class="text-box" type="text" name="fname" value="" required="yes" style="margin-left: 6px;">
-                </td>
-            </tr>
+    <!-- Message 1 -->
+    <div class="container" id="sectionID">
+      <div class="row mt-4 mb-2">
+        <div class="col-12 p-5 d-flex align-items-center">
+          <section class="message1">
+            <h2>Explore Cloud 9: Where Scenery Meets Adventure!</h2>
+            <p>Immerse yourself in the unparalleled experience of Cloud 9 Sports and Leisure Club. Plan your visit today to discover a world of breathtaking views, relaxation, and exciting adventures waiting just for you. Book now and embark on your unforgettable journey!</p>
+          </section>
+        </div>
+      </div>
+    </div>
 
-            <tr>
-                <td>Password:
-                <input class="text-box" type="password" name="fname" value="" required="yes" style="margin-left: 17px;">
-                </td>
-            </tr>
-
-            <tr>
-                <td>First Name:
-                <input class="text-box" type="text" name="fname" value="" required="yes" style="margin-left: 7px;">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Last Name:
-                <input class="text-box" type="text" name="lname" value="" required="yes" style="margin-left: 9px;">
-                </td>
-            </tr>
-
-            <tr>
-                <td>Address:
-                <input class="text-box" type="text" name="address" value="" required="yes" size="30" style="margin-left: 27px;">
-                </td>
-            </tr>
-
-        </table>
-
-            <br>
-            
-            <div class="choices">
-                Gender:
-                <input type="radio" name="gender">Male
-                <input type="radio" name="gender2">Female
-                <br><br>
-                Select Your Province:
-                <select name="province" id="" style="background-color: rgba(170, 170, 170, 0.541);">
-                    <option value="">Aurora</option>
-                    <option value="">Batangas</option>
-                    <option value="">Cebu</option>
-                    <option value="">Davao Del Sur</option>
-                    <option value="">Ilocos Norte</option>
-                    <option value="">Laguna</option>
-                    <option value="">Nueva Ecija</option>
-                    <option value="">Rizal</option>
-                    <option value="">Samar</option>
-                    <option value="">Tarlac</option>
-                    <option value="">Zambales</option>
-                </select>
-                <br><br>
-                COMMENTS/SUGGESTIONS: <br>
-                <textarea name="10" cols="50" style="background-color: rgba(170, 170, 170, 0.541);">
-Please enter your comments here...
-                </textarea>
-                <br><br>
-                <input type="submit" value="Submit Form">
-                <input type="Reset" value="Clear Form">
-            </div>
-
-    </form>
+    <!-- Form -->
+    <div class="container-fluid mycardcontainer p-5" style="text-align: center;">
+        <iframe id="form-container" src="https://docs.google.com/forms/d/e/1FAIpQLSemj2e4YliHHEZqn5wwiHHoF4_33PrZqPafzVAmTsfTK9Yo6Q/viewform?embedded=true" width="640" height="1574" scrolling="no">Loading…</iframe>
+    </div>
     
+
+    <!-- Message 2 -->
+    <div class="container message2">
+      <div class="row mt-4 mb-2">
+        <div class="col-12 p-5 d-flex align-items-center">
+          <section>
+            <h2>Cloud 9 Sports and Leisure Club</h2>
+            <p>One of the most well-known leisure centers is Cloud 9 Sports and Leisure Club, which was originally opened to the public as a restaurant in 1995. Located atop a high place, Cloud 9 Sports and Leisure Club offers breathtaking views of the surrounding areas. Upon entering the main building, visitors traverse a hanging bridge connecting two structures, providing access to the top where panoramic vistas await. Guests can dine at the restaurants, indulging in relaxation while enjoying the scenery. Additionally, opportunities abound to explore nearby historic sites, ensuring an unforgettable experience.</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid myfooter">
+      <div class="container">
+        <div class="col-12 p-5 d-flex align-items-center">
+          <section class="mysection mt-3">
+            <a href="index.html" class="myicons"><i class="fa-solid fa-house"></i></a>
+            <a href="https://www.facebook.com/cloud9angtipolo/" class="myicons"><i class="fa-brands fa-facebook"></i></a>
+            <a href="about_us.html#Contacts" class="myicons"><i class="fa-solid fa-envelope"></i></a>
+            <a href="about_us.html#Contacts" class="myicons"><i class="fa-solid fa-phone"></i></a>
+            <br>
+            <p class="mycopyright mt-3">&copy; Jerdan Gondayao</p>
+          </section>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  
+  <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
